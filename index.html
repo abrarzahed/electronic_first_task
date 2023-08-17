@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/ee182ce9dd.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- google font - lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="hero">
+      <nav class="navbar">
+        <img
+          class="navbar-logo"
+          src="/assets/logo.webp"
+          alt="electronic first logo"
+        />
+        <div class="navbar-menu">
+          <div class="navbar-menu__top-bar">
+            <a href="#">Trending</a>
+            <a href="#">Pre-orders</a>
+            <a href="#">Upcoming</a>
+            <a href="#">Support 24/7</a>
+          </div>
+          <div class="navbar-menu__items">
+            <div class="navbar-menu__items-item">
+              <i class="fa-solid fa-laptop"></i>
+              <span>PC</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="navbar-menu__items-item">
+              <i class="fa-brands fa-playstation"></i>
+              <span>Playstation</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="navbar-menu__items-item">
+              <i class="fa-brands fa-xbox"></i>
+              <span>Xbox</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="navbar-menu__items-item">
+              <i class="fa-solid fa-gamepad"></i>
+              <span>Nintendo</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </div>
+            <div class="navbar-menu__items-item search-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+        </div>
+        <div class="navbar-icons">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <i class="fa-regular fa-user"></i>
+        </div>
+      </nav>
+      <div class="hero-content">
+        <span class="date">In 15 days</span>
+        <h1>
+          Starfield Digital Premium <br />
+          Edition + Early Access
+        </h1>
+        <div class="hero-content__price">
+          <span class="left">25%</span>
+          <span class="right">74.89€</span>
+        </div>
+      </div>
+    </div>
+
+    <main class="products">
+      <div class="products-header">
+        <h3>Trending</h3>
+        <button>View all</button>
+      </div>
+      <div class="products-cards">
+        <div class="products-cards__card">
+          <div class="products-cards__card-image">
+            <img src="/assets/card1.jpg" alt="" />
+            <span>25%</span>
+          </div>
+          <div class="products-cards__card-info">
+            <span class="name">Sengoku Dynasty</span>
+            <span class="price">19.99€</span>
+          </div>
+        </div>
+        <div class="products-cards__card">
+          <div class="products-cards__card-image">
+            <img src="/assets/card2.jpeg" alt="" />
+            <span>25%</span>
+          </div>
+          <div class="products-cards__card-info">
+            <span class="name">Sengoku Dynasty</span>
+            <span class="price">19.99€</span>
+          </div>
+        </div>
+        <div class="products-cards__card">
+          <div class="products-cards__card-image">
+            <img src="/assets/card3.jpg" alt="" />
+            <span>25%</span>
+          </div>
+          <div class="products-cards__card-info">
+            <span class="name">Sengoku Dynasty</span>
+            <span class="price">19.99€</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
