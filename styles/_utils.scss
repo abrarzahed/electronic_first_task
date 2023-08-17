@@ -16,3 +16,14 @@ img {
 body {
   background: #191818;
 }
+.dropdown-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 18px;
+  backdrop-filter: blur(10px);
+}
