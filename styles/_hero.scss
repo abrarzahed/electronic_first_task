@@ -56,7 +56,7 @@
         }
 
         .dropdown {
-          position: fixed;
+          position: absolute;
           top: 90px;
           left: 10px;
           width: 100%;
@@ -73,7 +73,7 @@
           color: #fff;
           box-shadow: 0 0 0 2000px rgba(0, 0, 0, 0.5);
           isolation: isolate;
-          overflow: hidden;
+          // overflow: hidden;
           scale: 1;
           transition: 400ms linear;
           padding: 24px;
@@ -84,8 +84,8 @@
             left: 0;
             height: 100%;
             width: 100%;
-
-            backdrop-filter: blur(10px);
+            border-radius: 8px;
+            backdrop-filter: blur(20px);
             z-index: -1;
           }
           &::before {
@@ -95,12 +95,21 @@
             left: 0;
             height: 100%;
             width: 100%;
-
-            backdrop-filter: blur(10px);
+            border-radius: 8px;
+            backdrop-filter: blur(20px);
             z-index: -2;
           }
           &.hidden {
             scale: 0;
+          }
+          &-close-btn {
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            cursor: pointer;
+            i {
+              font-size: 28px;
+            }
           }
           .cards {
             margin-top: 1rem;
