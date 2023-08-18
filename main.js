@@ -8,8 +8,10 @@ const dropdownCloseBtn = document.querySelector(".dropdown-close-btn");
 const searchBarCloseBtn = document.querySelector(".search-bar__close");
 const searchBar = document.querySelector(".navbar-menu__items-search");
 const searchBarIcon = document.querySelector(".search-bar__icon");
-// const hero = document.querySelector(".hero");
 
+/****************************************** 
+COMMENT: open and close dropdown   
+******************************************/
 const openDropdown = () => {
   dropdown.classList.remove("hidden");
 };
@@ -29,13 +31,21 @@ document.addEventListener("keydown", (event) => {
 });
 dropdownCloseBtn.addEventListener("click", closeDropdown);
 
-searchBarCloseBtn.addEventListener("click", () => {
-  searchBar.classList.remove("active");
-});
-searchBarIcon.addEventListener("click", () => {
+/****************************************** 
+COMMENT: open and close searchbar   
+******************************************/
+const openSearchbar = () => {
   searchBar.classList.add("active");
   searchBarCloseBtn.classList.remove("hidden");
-});
-searchBarCloseBtn.addEventListener("click", () => {
+};
+const closeSearchbar = () => {
+  searchBar.classList.remove("active");
   searchBarCloseBtn.classList.add("hidden");
+};
+
+searchBarCloseBtn.addEventListener("click", () => {
+  closeSearchbar();
+});
+searchBarIcon.addEventListener("click", () => {
+  openSearchbar();
 });
