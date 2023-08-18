@@ -24,8 +24,45 @@
     <!-- **************************************** 
     COMMENT: hero section with nav inside   
     ***************************************** -->
+    <div class="mobile-menu hidden">
+      <div class="mobile-menu__header">
+        <button>MENU</button>
+        <i class="fa-solid mobile-menu-close close fa-xmark"></i>
+      </div>
+
+      <div class="mobile-menu__items">
+        <div class="mobile-menu__items-item">
+          <span>HOME</span>
+        </div>
+        <div class="mobile-menu__items-item">
+          <span>XBOX</span>
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="mobile-menu__items-item">
+          <span>PLAYSTATION</span>
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="mobile-menu__items-item">
+          <span>NINTENDO</span>
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="mobile-menu__items-item">
+          <span>PC GAMES</span>
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="mobile-menu__items-item">
+          <span>GIFT CARDS</span>
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+      </div>
+    </div>
     <div class="hero">
       <nav class="navbar">
+        <!-- mobile menu icon -->
+        <div class="navbar-mobile-menu">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
         <img
           class="navbar-logo"
           src="/assets/logo.webp"
@@ -154,11 +191,6 @@
           <i class="fa-solid fa-cart-shopping"></i>
           <i class="fa-regular fa-user"></i>
         </div>
-
-        <!-- mobile menu icon -->
-        <div class="navbar-mobile-menu">
-          <i class="fa-solid fa-bars"></i>
-        </div>
       </nav>
 
       <!-- hero content -->
@@ -192,6 +224,36 @@
         <button>View all</button>
       </div>
       <div class="products-cards">
+        <div class="products-cards__card">
+          <div class="products-cards__card-image">
+            <img src="/assets/card1.jpg" alt="" />
+            <span>25%</span>
+          </div>
+          <div class="products-cards__card-info">
+            <span class="name">Sengoku Dynasty</span>
+            <span class="price">19.99€</span>
+          </div>
+        </div>
+        <div class="products-cards__card">
+          <div class="products-cards__card-image">
+            <img src="/assets/card2.jpeg" alt="" />
+            <span>25%</span>
+          </div>
+          <div class="products-cards__card-info">
+            <span class="name">Sengoku Dynasty</span>
+            <span class="price">19.99€</span>
+          </div>
+        </div>
+        <div class="products-cards__card">
+          <div class="products-cards__card-image">
+            <img src="/assets/card3.jpg" alt="" />
+            <span>25%</span>
+          </div>
+          <div class="products-cards__card-info">
+            <span class="name">Sengoku Dynasty</span>
+            <span class="price">19.99€</span>
+          </div>
+        </div>
         <div class="products-cards__card">
           <div class="products-cards__card-image">
             <img src="/assets/card1.jpg" alt="" />

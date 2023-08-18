@@ -8,6 +8,9 @@ const dropdownCloseBtn = document.querySelector(".dropdown-close-btn");
 const searchBarCloseBtn = document.querySelector(".search-bar__close");
 const searchBar = document.querySelector(".navbar-menu__items-search");
 const searchBarIcon = document.querySelector(".search-bar__icon");
+const mobileMenu = document.querySelector(".mobile-menu");
+const mobileMenuIcon = document.querySelector(".navbar-mobile-menu");
+const mobileMenuCloseBtn = document.querySelector(".mobile-menu-close");
 
 /****************************************** 
 COMMENT: open and close dropdown   
@@ -48,4 +51,14 @@ searchBarCloseBtn.addEventListener("click", () => {
 });
 searchBarIcon.addEventListener("click", () => {
   openSearchbar();
+});
+
+/****************************************** 
+COMMENT: open and close mobile menu   
+******************************************/
+mobileMenuCloseBtn.addEventListener("click", () => {
+  mobileMenu.classList.add("hidden");
+});
+mobileMenuIcon.addEventListener("click", () => {
+  mobileMenu.classList.remove("hidden");
 });

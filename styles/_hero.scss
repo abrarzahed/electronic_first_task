@@ -246,6 +246,10 @@
       gap: 1rem;
       align-items: center;
 
+      i {
+        cursor: pointer;
+      }
+
       .fa-user {
         background: #101010;
         border-radius: 8px;
@@ -256,6 +260,9 @@
 
     &-mobile-menu {
       display: none;
+      i {
+        font-size: 24px;
+      }
       cursor: pointer;
       @media (max-width: 768px) {
         display: unset;
@@ -268,6 +275,7 @@
     display: grid;
     gap: 0.8rem;
     margin-inline: auto;
+    margin-top: 4rem;
 
     @media (max-width: 768px) {
       margin-top: 3rem;
@@ -317,17 +325,22 @@
     @media (max-width: 768px) {
       left: unset;
       bottom: unset;
-      font-size: 16px;
+      font-size: 15px;
       letter-spacing: 2px;
       position: relative;
       width: max-content;
       margin-top: 2rem;
+      padding: 0.6rem;
+      padding-inline: 1rem;
     }
 
     &__border {
       position: absolute;
-      border: 10px solid #ddd;
+      border: 10px solid #aaa;
       z-index: -10;
+      @media (max-width: 768px) {
+        border: 8px solid #ddd;
+      }
 
       &.top-left {
         top: -5px;
