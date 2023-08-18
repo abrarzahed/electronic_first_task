@@ -4,7 +4,10 @@ import "./styles/style.scss";
 // selectors
 const menuItems = document.querySelectorAll(".navbar-menu__items-item");
 const dropdown = document.querySelector(".dropdown");
-const btnClose = document.querySelector(".dropdown-close-btn");
+const dropdownCloseBtn = document.querySelector(".dropdown-close-btn");
+const searchBarCloseBtn = document.querySelector(".search-bar__close");
+const searchBar = document.querySelector(".navbar-menu__items-search");
+const searchBarIcon = document.querySelector(".search-bar__icon");
 // const hero = document.querySelector(".hero");
 
 const openDropdown = () => {
@@ -16,27 +19,23 @@ const closeDropdown = () => {
 };
 
 menuItems.forEach((item) => {
-  item.addEventListener("click", (e) => {
-    if (
-      e.target.classList.contains("search-icon") ||
-      e.target.classList.contains("fa-magnifying-glass")
-    ) {
-      return;
-    }
-    openDropdown();
-  });
+  item.addEventListener("click", openDropdown);
 });
-
-/*
-hero.addEventListener("click", (e) => {
-  if (!e.target.classList.contains("hero")) return;
-  closeDropdown();
-});
-*/
 
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") {
     closeDropdown();
   }
 });
-btnClose.addEventListener("click", closeDropdown);
+dropdownCloseBtn.addEventListener("click", closeDropdown);
+
+searchBarCloseBtn.addEventListener("click", () => {
+  searchBar.classList.remove("active");
+});
+searchBarIcon.addEventListener("click", () => {
+  searchBar.classList.add("active");
+  searchBarCloseBtn.classList.remove("hidden");
+});
+searchBarCloseBtn.addEventListener("click", () => {
+  searchBarCloseBtn.classList.add("hidden");
+});
